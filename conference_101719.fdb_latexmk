@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1730572619.75123 "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1730572621.5086 0
+["pdflatex"] 1731263958.94882 "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731263960.43902 0
   "IEEEtran.cls" 1730506044 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "conference_101719.aux" 1730572621 2179 abcffa207fec145c929fef36034e3ed1 "pdflatex"
-  "conference_101719.tex" 1730572616 13967 e3cc654061ac5cb207192d2555feee3f ""
+  "conference_101719.aux" 1731263960 2179 abcffa207fec145c929fef36034e3ed1 "pdflatex"
+  "conference_101719.tex" 1731263957 14067 a5dba10345500df8ff0a8c7e4814b222 ""
   "d:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1730420265 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1730420533 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1730420062 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -81,7 +81,7 @@
   "d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1730426221 3325923 c77af011d1b205e327775011df86642a ""
   "d:/texlive/2024/texmf.cnf" 1730425874 713 e69b156964470283e0530f5060668171 ""
   "fig1.png" 1730506044 4535 0e284ca354e1b5c77378d3dfdb543874 ""
-  "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" 1730572616 13967 e3cc654061ac5cb207192d2555feee3f ""
+  "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" 1731263957 14067 a5dba10345500df8ff0a8c7e4814b222 ""
   (generated)
   "conference_101719.aux"
   "conference_101719.log"
