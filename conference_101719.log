@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.1)  11 NOV 2024 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.1)  11 NOV 2024 18:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -233,7 +233,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box56
-) (./conference_101719.aux)
+)
+No file conference_101719.aux.
 \openout1 = `conference_101719.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -250,7 +251,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-
 -- Lines per column: 56 (exact).
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -286,6 +286,30 @@ LaTeX Warning: Reference `fig:ltspice_receiver' on page 1 undefined on input lin
 
 
  <./drone_flying_over_sensor.jpg>]
+
+LaTeX Warning: File `ltspice_receiver.jpg' not found on input line 83.
+
+
+g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex:83: Package pdftex.def Error: File `ltspice_receiver.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ...idth=0.8\linewidth]{ltspice_receiver.jpg}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 83.
+(c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+LaTeX Warning: Reference `fig:drone_over_sensor' on page 2 undefined on input line 90.
+
+
+
 No file conference_101719.bbl.
 
 ** Conference Paper **
@@ -300,11 +324,7 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-
-
-[2
-
-] (./conference_101719.aux)
+[2] (./conference_101719.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
@@ -313,20 +333,23 @@ L3 programming layer <2024-10-09>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4113 strings out of 473577
- 64032 string characters out of 5732225
- 466722 words of memory out of 5000000
- 26999 multiletter control sequences out of 15000+600000
- 588543 words of font info for 85 fonts, out of 8000000 for 9000
+ 4178 strings out of 473577
+ 65403 string characters out of 5732225
+ 466717 words of memory out of 5000000
+ 27061 multiletter control sequences out of 15000+600000
+ 589058 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,742b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (2 pages, 10245219 bytes).
+ 57i,8n,65p,742b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (2 pages, 10254088 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

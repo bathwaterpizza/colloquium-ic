@@ -79,6 +79,12 @@ referenciar fig 1 como um cenario
 
 In order to conduct experiments, we assembled a passive wake-up radio receiver on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. Since the primary function of the WuRx is to trigger an interrupt in the sensor's GPIO ports, we've also included an 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. An LTSpice simulation of the circuit is depicted in Figure \ref{fig:ltspice_receiver}.
 
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=0.8\linewidth]{ltspice_receiver.jpg}}
+  \caption{Circuit}
+  \label{fig:ltspice_receiver}
+\end{figure}
+
 In this instance, we performed in-lab measurements with the transmitter powered directly by a DC power supply. The transmitter is a CC1101 radio connected to an ESP32, which is programmed to continuously send a carrier wave with arbitrary data at its maximum power of +12~dBm, in the 433~MHz frequency range. The receiver is connected to an oscilloscope for measuring output voltage, as we hope to achieve at least 2.3~V, which is the minimum threshold for interrupt detection by an MSP430-equipped sensor node.
 
 Although initial tests were performed indoors, we've also built an autonomous, programmable and modular UAV, as seen in Figure \ref{fig:drone_over_sensor}, in order to assess more realistic scenarios.
