@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex conference_101719"] 0 "conference_101719.aux" "conference_101719.bbl" "conference_101719" 1731294403.26143 0
+["bibtex conference_101719"] 0 "conference_101719.aux" "conference_101719.bbl" "conference_101719" 1731299101.28032 0
   "conference_101719.aux" 0 -1 0 "pdflatex"
   "d:/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1730421132 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "references.bib" 0 -1 0 ""
@@ -7,11 +7,11 @@
   "conference_101719.bbl"
   "conference_101719.blg"
   (rewritten before read)
-["pdflatex"] 1731294398.69172 "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731294403.26792 0
+["pdflatex"] 1731299097.34476 "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731299101.28442 0
   "IEEEtran.cls" 1730506044 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "conference_101719.aux" 1731294401 916 9386dbb26a2f2b6ae2dc4ab40783faae "pdflatex"
+  "conference_101719.aux" 1731299099 922 d5e8dd350fdaafc399d626548f7174e4 "pdflatex"
   "conference_101719.bbl" 0 -1 0 "bibtex conference_101719"
-  "conference_101719.tex" 1731294400 4876 75715050590c730f7cfa354de4853e95 ""
+  "conference_101719.tex" 1731299096 4934 3775f4b7f27a6f935d8b6b3f1ce50a30 ""
   "d:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1730420265 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1730420533 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1730424519 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -62,7 +62,7 @@
   "d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1730426221 3325923 c77af011d1b205e327775011df86642a ""
   "d:/texlive/2024/texmf.cnf" 1730425874 713 e69b156964470283e0530f5060668171 ""
   "drone_flying_over_sensor.jpg" 1731276602 10185616 b922240d2e51579bf8b7f0a437a5a4b1 ""
-  "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" 1731294400 4876 75715050590c730f7cfa354de4853e95 ""
+  "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" 1731299096 4934 3775f4b7f27a6f935d8b6b3f1ce50a30 ""
   (generated)
   "conference_101719.aux"
   "conference_101719.log"
