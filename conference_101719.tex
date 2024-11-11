@@ -54,17 +54,15 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 Mobile data sink nodes have been increasingly used to support wireless sensor networks in remote or hard-to-reach areas(CITE GRADYS). In UAV-WSNs, UAVs act as dynamic gateways, enabling data transfer from localized sensors to a base station, which then relays data to the cloud for further processing. This approach can be valuable for applications such as environmental monitoring(CITE) and precision agriculture(CITE).
 
-One of the challenges with WSNs in remote areas is the reliance on battery-powered sensors, which have limited lifespans and contribute to environmental waste (CITE). Energy harvesting offers a potential solution by enabling sensors to operate without batteries, instead drawing energy from ambient sources like solar or radiofrequency waves (CITE). However, EH systems pose difficulties of their own, including limited and fluctuating power availability, dependence on environmental conditions, and the need for efficient energy management(CITE). These limitations often result in intermittent operation, where sensors cannot be continuously active(CITE).
+One of the challenges with WSNs in remote areas is the reliance on battery-powered sensors, which have limited lifespans and contribute to environmental waste (CITE). Energy harvesting offers a potential solution by enabling sensors to operate without batteries, instead drawing energy from ambient sources like solar or radiofrequency (RF) waves (CITE). However, EH systems pose difficulties of their own, including limited and fluctuating power availability, dependence on environmental conditions, and the need for efficient energy management(CITE). These limitations often result in intermittent operation, where sensors cannot be continuously active(CITE).
 
-\section{Research scope}
+\section{Energy-Efficient Communication}
 
-dos problemas ao introduzir EH, focar no problema de wake-up
+Traditional duty cycling is a common technique for reducing energy consumption in WSNs(CITE), by periodically switching sensors between active and sleep states. While this approach can extend battery life, it introduces latency and limits network responsiveness(CITE), as sensors are unavailable during sleep periods. Wake-up receiver (WuRx)-based solutions offer a more efficient alternative, as they allow sensors to remain in a deep sleep state until activated by an external signal, therefore drastically reducing energy use(CITE).
 
-falar sobre as alternativas de duty cycling e wake-up receivers
+There are various WuRx options(CITE), including optical and acoustic receivers, each suited for specific applications. Optical receivers are often used in line-of-sight scenarios, such as indoor lighting systems(CITE), while acoustic receivers are common in underwater networks or areas where RF propagation is limited(CITE). However, wake-up radios (WuR) are particularly suitable for UAV-WSNs due to their ability to provide reliable, long-range activation without the need for line-of-sight(CITE). Figure \ref{fig:drone_over_sensor} shows one of our test scenarios, a UAV with a transmitter approaching a sensor powered by solar energy harvesting, connected to a prototype passive WuR.
 
-comentar que escolhemos passive WuRx
-
-referenciar fig 1 como um cenario
+TODO: justificar melhor ter escolhido wake-up radios, e as aplicacoes dos outros tipos. revisar esse segundo paragrafo em geral, primeiro ta ok.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=0.8\linewidth]{drone_flying_over_sensor.jpg}}
@@ -72,12 +70,11 @@ referenciar fig 1 como um cenario
   \label{fig:drone_over_sensor}
 \end{figure}
 
+\section{Experiment and Results}
 
-\section{Experiment and results}
+\subsection{Setup and Methodology}
 
-\subsection{Setup}
-
-In order to conduct experiments, we assembled a passive wake-up radio receiver on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. Since the primary function of the WuRx is to trigger an interrupt in the sensor's GPIO ports, we've also included an 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. An LTSpice simulation of the circuit is depicted in Figure \ref{fig:ltspice_receiver}.
+In order to conduct experiments, we assembled a passive wake-up radio receiver on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included an 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. An LTSpice simulation of the circuit is depicted in Figure \ref{fig:ltspice_receiver}.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=0.8\linewidth]{ltspice_receiver.jpg}}
@@ -89,13 +86,15 @@ In this instance, we performed in-lab measurements with the transmitter powered 
 
 Although initial tests were performed indoors, we've also built an autonomous, programmable and modular UAV, as seen in Figure \ref{fig:drone_over_sensor}, in order to assess more realistic scenarios.
 
-\subsection{Preliminary findings}
+\subsection{Preliminary Findings}
 
 Experiments revealed that the transmitter's output power was unable to charge the receiver's capacitors at a significant rate, except when their antennas were less than 1~cm apart, at which point we attribute the energy transfer to near-field coupling, rather than far-field RF harvesting. Because the UAV cannot hover on top of the receiver for too long, it is essential that the voltage rapidly reaches 2.3~V. Ideally, the UAV would fly over the sensor and collect the necessary data without any deceleration.
 
 As a point of reference, we've also performed tests with a commercial 433~MHz handheld transceiver capable of 2-3~W (33-34.7~dBm) output power, which was able to quickly generate an interrupt on the receiver at a 30~cm distance while transmitting. With this observation, we believe that an active amplifier must be utilized, either on the transmitter, using the UAV's battery as a power source, or at the receiver output, borrowing power from the sensor's energy harvester. We plan to compare both solutions in our next phase of research.
 
 \section{Conclusion}
+
+summarize findings
 
 next steps
 
