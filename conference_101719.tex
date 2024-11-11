@@ -11,7 +11,7 @@
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Exploring Energy-Efficient Communication in UAV-assisted Batteryless Wireless Sensor Networks}
+\title{Energy-Efficient Communication in UAV-assisted Batteryless Wireless Sensor Networks}
 
 \author{
   \IEEEauthorblockN{Miguel Brandt}
@@ -42,7 +42,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \maketitle
 
 \begin{abstract}
-  A number of studies have been proposed to tackle the task of monitoring large areas by deploying a wireless sensors network. When communication infrastructure is unavailable, or the region is not easily accessible,
+  A number of studies have been proposed to tackle the task of monitoring large areas by deploying a wireless sensor network. When communication infrastructure is unavailable, or the region is not easily accessible,
   data can be retrieved from such networks by using UAVs as gateways to a base station, thus creating a UAV-assisted
   wireless sensor network (UAV-WSN).
 
@@ -51,12 +51,61 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
   often treated as disposable, and as a result, become chemical waste.
 
   In this study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within
-  UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by briefly investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radio receivers, proposing a simple design and conducting real-world experiments.
+  UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radio receivers, proposing a simple design and conducting real-world experiments.
 \end{abstract}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits.
+
+Contexto sobre UAV-WSNs
+
+explicar brevemente EH
+
+aplicacoes
+
+
+\section{Scenario}
+
+citar gradys
+
+problemas que aparecem ao introduzir EH/intermitencia
+
+focar no problema de wake-up
+
+mention drone built in-house
+
+maybe a diagram showing the drone setup
+
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=0.8\linewidth]{drone_flying_over_sensor.jpg}}
+  \caption{UAV approaching a batteryless sensor to collect data}
+  \label{fig:drone_over_sensor}
+\end{figure}
+
+
+\section{Experiment and results}
+
+\subsection{Setup}
+
+In order to conduct experiments, we assembled a passive wake-up radio receiver on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. Since the primary function of the WuRx is to trigger an interrupt in the sensor's GPIO ports, we've also included a voltage clamping Zener diode of 3~V to prevent accidental damage to the microcontroller. An LTSpice simulation of the circuit is depicted in Figure \ref{fig:ltspice_receiver}.
+
+In this instance, we performed in-lab measurements with the transmitter powered directly by a DC power supply. The transmitter is a CC1101 radio connected to an ESP32, which is programmed to continuously send a carrier wave with arbitrary data at its maximum power of +12~dBm, in the 433~MHz frequency range. The receiver is connected to an oscilloscope for measuring output voltage, as we hope to achieve at least 2.3~V, which is the minimum threshold for interrupt detection by an MSP430-equipped sensor node.
+
+Although initial tests were performed indoors, we've also built an autonomous, programmable and modular UAV, as seen in Figure \ref{fig:drone_over_sensor}, in order to assess more realistic scenarios.
+
+\subsection{Preliminary findings}
+
+mention we want to put an amplifier on the drone, another option would be using harvested energy from the sensor.
+
+
+\section{Conclusion}
+
+TODO
+
+next steps
+
+want to conduct outdoors tests with the drone, amplifier mounted, measure motor interference
+
+optimize energy transfer: investigate better antenna designs, dipole antenna option better ground plane
 
 \section{Ease of Use}
 
@@ -260,5 +309,9 @@ element symbols.
 For papers published in translation journals, please give the English
 citation first, followed by the original foreign-language citation \cite{b6}.
 
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
 
 \end{document}
