@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  10 NOV 2024 23:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  11 NOV 2024 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -274,11 +274,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <drone_flying_over_sensor.jpg, id=1, 3011.25pt x 4015.0pt>
 File: drone_flying_over_sensor.jpg Graphic file (type jpg)
 <use drone_flying_over_sensor.jpg>
-Package pdftex.def Info: drone_flying_over_sensor.jpg  used on input line 79.
+Package pdftex.def Info: drone_flying_over_sensor.jpg  used on input line 74.
 (pdftex.def)             Requested size: 201.60077pt x 268.76468pt.
 
 
-LaTeX Warning: Reference `fig:ltspice_receiver' on page 1 undefined on input line 89.
+LaTeX Warning: Reference `fig:ltspice_receiver' on page 1 undefined on input line 84.
 
 
 
@@ -288,68 +288,6 @@ LaTeX Warning: Reference `fig:ltspice_receiver' on page 1 undefined on input lin
 
 
  <./drone_flying_over_sensor.jpg>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 129.
- (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 129.
- (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 164.
-(d:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-[2]
-
-LaTeX Warning: Citation `b7' on page 3 undefined on input line 213.
-
-
-
-<fig1.png, id=18, 82.1469pt x 71.5473pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 269.
-(pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 280.
-(d:/texlive/2024/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 280.
-
-
-LaTeX Warning: Citation `b1' on page 3 undefined on input line 293.
-
-
-LaTeX Warning: Citation `b2' on page 3 undefined on input line 294.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 295.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 295.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 295.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 296.
-
-
-
-[3 <./fig1.png (PNG copy)>]
-
-LaTeX Warning: Citation `b4' on page 4 undefined on input line 304.
-
-
-LaTeX Warning: Citation `b5' on page 4 undefined on input line 305.
-
-
-LaTeX Warning: Citation `b6' on page 4 undefined on input line 310.
-
 No file conference_101719.bbl.
 
 ** Conference Paper **
@@ -366,7 +304,7 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[4
+[2
 
 ] (./conference_101719.aux)
  ***********
@@ -379,18 +317,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4259 strings out of 473577
- 66146 string characters out of 5732224
- 472804 words of memory out of 5000000
- 27112 multiletter control sequences out of 15000+600000
- 599998 words of font info for 113 fonts, out of 8000000 for 9000
+ 4113 strings out of 473577
+ 64032 string characters out of 5732224
+ 465722 words of memory out of 5000000
+ 26999 multiletter control sequences out of 15000+600000
+ 588543 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,649b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (4 pages, 10322236 bytes).
+ 57i,8n,65p,649b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (2 pages, 10242801 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
