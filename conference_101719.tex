@@ -2,7 +2,8 @@
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
-\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsmath,amssym
+b,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
@@ -46,26 +47,22 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
   However, providing regular maintenance for an extensive, scattered WSN is impractical, leading to devices with limited service life, usually tied to their battery lifespan. Further, they are often treated as disposable, and as a result, become chemical waste.
 
-  In this study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radio receivers, proposing a simple design and discussing the results of real-world experiments.
+  In this ongoing study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radio receivers, proposing a simple design and discussing the results of real-world experiments.
 \end{abstract}
 
 \section{Introduction}
 
-Contexto sobre UAV-WSNs
+Mobile data sink nodes have been increasingly used to support wireless sensor networks in remote or hard-to-reach areas(CITE GRADYS). In UAV-WSNs, UAVs act as dynamic gateways, enabling data transfer from localized sensors to a base station, which then relays data to the cloud for further processing. This approach can be valuable for applications such as environmental monitoring(CITE) and precision agriculture(CITE).
 
-explicar brevemente EH
-
-aplicacoes
+One of the challenges with WSNs in remote areas is the reliance on battery-powered sensors, which have limited lifespans and contribute to environmental waste (CITE). Energy harvesting offers a potential solution by enabling sensors to operate without batteries, instead drawing energy from ambient sources like solar or radiofrequency waves (CITE). However, EH systems pose difficulties of their own, including limited and fluctuating power availability, dependence on environmental conditions, and the need for efficient energy management(CITE). These limitations often result in intermittent operation, where sensors cannot be continuously active(CITE).
 
 \section{Research scope}
 
-citar gradys
+dos problemas ao introduzir EH, focar no problema de wake-up
 
-problemas que aparecem ao introduzir EH/intermitencia
+falar sobre as alternativas de duty cycling e wake-up receivers
 
-focar no problema de wake-up
-
-maybe a diagram showing the full setup
+comentar que escolhemos passive WuRx
 
 referenciar fig 1 como um cenario
 
@@ -90,11 +87,7 @@ Although initial tests were performed indoors, we've also built an autonomous, p
 
 Experiments revealed that the transmitter's output power was unable to charge the receiver's capacitors at a significant rate, except when their antennas were less than 1~cm apart, at which point we attribute the energy transfer to near-field coupling, rather than far-field RF harvesting. Because the UAV cannot hover on top of the receiver for too long, it is essential that the voltage rapidly reaches 2.3~V. Ideally, the UAV would fly over the sensor and collect the necessary data without any deceleration.
 
-To combat this issue, two solutions will be explored: first we will (...)
-
-mention experiments with 433mhz handheld transceiver
-
-mention we want to put an amplifier on the drone, another option would be using harvested energy from the sensor.
+As a point of reference, we've also performed tests with a commercial 433~MHz handheld transceiver capable of 2-3~W (33-34.7~dBm) output power, which was able to quickly generate an interrupt on the receiver at a 30~cm distance while transmitting. With this observation, we believe that an active amplifier must be utilized, either on the transmitter, using the UAV's battery as a power source, or at the receiver output, borrowing power from the sensor's energy harvester. We plan to compare both solutions in our next phase of research.
 
 \section{Conclusion}
 
