@@ -1,7 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1731428864.14675 "c:/Users/cakto/OneDrive/Área de Trabalho/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731428865.46247 0
+["bibtex conference_101719"] 1731445975.06151 "conference_101719.aux" "conference_101719.bbl" "conference_101719" 1731445981.66633 0
+  "./references.bib" 1731445588 17048 488ad54fbc866794c1fead6f70a423e2 ""
+  "c:/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1730476543 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  "conference_101719.aux" 1731445979 1924 1624a19dd26f90aa5c654dc2dbc707d5 "pdflatex"
+  (generated)
+  "conference_101719.bbl"
+  "conference_101719.blg"
+  (rewritten before read)
+["pdflatex"] 1731445976.2794 "c:/Users/cakto/OneDrive/Área de Trabalho/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731445981.66713 0
   "IEEEtran.cls" 1731404171 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "c:/Users/cakto/OneDrive/Área de Trabalho/colloquium-ic/conference_101719.tex" 1731428863 10076 530110f36c60b9d7bb6e16df0f6524c0 ""
+  "c:/Users/cakto/OneDrive/Área de Trabalho/colloquium-ic/conference_101719.tex" 1731445966 9928 65652c1f78d8fe827050bac5bfd2bfeb ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1730472459 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1730473792 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1730480393 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -22,6 +30,7 @@
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1730469761 940 228d6584342e91276bf566bcf9716b83 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1730469761 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1730469761 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1730469761 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1730480393 44729 fea0975e20ec51c992338362f05f1146 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1730480393 44656 0cbca70e0534538582128f6b54593cca ""
   "c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1730480393 46026 687528a208fbfc1f00832bb96cccebbb ""
@@ -62,6 +71,7 @@
   "c:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty" 1730476073 4023 2c9f39712cf7b43d3eb93a8bbd5c8f67 ""
   "c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1730476976 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
   "c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1730477150 678 4792914a8f45be57bb98413425e4c7af ""
+  "c:/texlive/2024/texmf-dist/tex/latex/psnfss/omsptm.fd" 1730479115 576 95c2c0baea9c719a4be29a3d4122498b ""
   "c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1730479115 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty" 1730479778 333464 eaa2dd164d6a66787bd58d75742944cc ""
   "c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty" 1730480458 14067 1383bd6ee23ab18ae0e796155404deb7 ""
@@ -72,8 +82,9 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1730481139 5521136 47e49b84c41d5ab3414c7e2d0ef6eb2b ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1730481399 3325939 e39e0cf3e0271cdc6fce75dfc1df096d ""
   "c:/texlive/2024/texmf.cnf" 1730481113 713 e69b156964470283e0530f5060668171 ""
-  "conference_101719.aux" 1731428865 1087 db22fca2bb2f5be4edb6184208012294 "pdflatex"
-  "conference_101719.tex" 1731428863 10076 530110f36c60b9d7bb6e16df0f6524c0 ""
+  "conference_101719.aux" 1731445979 1924 1624a19dd26f90aa5c654dc2dbc707d5 "pdflatex"
+  "conference_101719.bbl" 1731445976 4764 d8277220647e3399f70a71e9f20c21db "bibtex conference_101719"
+  "conference_101719.tex" 1731445966 9928 65652c1f78d8fe827050bac5bfd2bfeb ""
   "drone_flying_over_sensor.jpg" 1731404171 10185616 b922240d2e51579bf8b7f0a437a5a4b1 ""
   "receiver.png" 1731404171 94976 b9fe43b6d4d6752edb3614f3c4a60866 ""
   (generated)

@@ -12,32 +12,21 @@
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Energy-Efficient Communication in UAV-assisted Batteryless Wireless Sensor Networks}
+\title{Energy-Efficient Communication in UAV-assisted Batteryless WSNs Using Passive Wake-up Radios}
 
 \author{
-  \IEEEauthorblockN{Miguel Brandt}
+  \IEEEauthorblockN{Miguel Brandt, Adriano Branco, and Markus Endler}
   \IEEEauthorblockA{\textit{Department of Informatics} \\
     \textit{Pontifical Catholic University of Rio de Janeiro} \\
     Rio de Janeiro, Brazil \\
-  miguelperes@aluno.puc-rio.br}
+    miguelperes@aluno.puc-rio.br,\\
+  \{abranco,endler\}@inf.puc-rio.br}
   \and
   \IEEEauthorblockN{Kelvin Bittencourt}
   \IEEEauthorblockA{\textit{Department of Electrical Engineering} \\
     \textit{Pontifical Catholic University of Rio de Janeiro} \\
     Rio de Janeiro, Brazil \\
   kelvinbitt@aluno.puc-rio.br}
-  \and
-  \IEEEauthorblockN{Adriano Branco}
-  \IEEEauthorblockA{\textit{Department of Informatics} \\
-    \textit{Pontifical Catholic University of Rio de Janeiro} \\
-    Rio de Janeiro, Brazil \\
-  abranco@inf.puc-rio.br}
-  \and
-  \IEEEauthorblockN{Markus Endler}
-  \IEEEauthorblockA{\textit{Department of Informatics} \\
-    \textit{Pontifical Catholic University of Rio de Janeiro} \\
-    Rio de Janeiro, Brazil \\
-  endler@inf.puc-rio.br}
 }
 
 \maketitle
@@ -48,7 +37,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 \section{Introduction}
 
-Mobile data sink nodes have been increasingly used to support wireless sensor networks in remote or hard-to-reach areas(CITE GRADYS). In UAV-WSNs, UAVs act as dynamic gateways, enabling data transfer from localized sensors to a base station and relaying data to the cloud for further processing. This approach can be valuable for applications such as environmental monitoring(CITE), precision agriculture(CITE), and infrastructure inspection(CITE).
+Mobile data sink nodes have been increasingly used to support wireless sensor networks in remote or hard-to-reach areas\cite{gradys,uav_wsn_survey,survey_monitoring_uavwsn}. In UAV-WSNs, UAVs act as dynamic gateways, enabling data transfer from localized sensors to a base station and relaying data to the cloud for further processing. This approach can be valuable for applications such as environmental monitoring\cite{flood_forecasting_uavwsn,rural_environmental_monitoring_uavwsn}, precision agriculture\cite{agriculture_uavwsn}, and infrastructure inspection\cite{structure_monitoring_uavwsn}.
 
 One of the challenges with WSNs in remote areas is the reliance on battery-powered sensors, which have limited lifespans and contribute to environmental waste (CITE). Energy harvesting offers a potential solution by enabling sensors to operate without batteries, instead drawing energy from ambient sources like solar or radiofrequency (RF) waves (CITE). However, EH systems pose their own difficulties, including limited and fluctuating power availability, dependence on environmental conditions, and the need for efficient energy management(CITE). These limitations often lead to intermittent operation, where sensors cannot be continuously active(CITE), making it necessary to employ communication strategies that minimize energy consumption.
 
@@ -56,7 +45,7 @@ One of the challenges with WSNs in remote areas is the reliance on battery-power
 
 Traditional duty cycling reduces energy consumption in wireless sensor networks (WSNs) by periodically switching sensors between active and sleep states(CITE). However, this method introduces several drawbacks, including overhearing, increased latency, packet loss, synchronization complexity, and energy inefficiency during low activity periods(CITE). Wake-up receiver (WuRx)-based solutions offer a more efficient alternative by allowing sensors to remain in deep sleep until activated by an external signal, significantly reducing energy consumption(CITE). Additionally, WuRxs can be configured for addressed wake-up, ensuring that only specific sensors are activated by the wake-up signal, thereby reducing unnecessary energy expenditure.(CITE)
 
-Various WuRx approaches exist, including radiofrequency, optical, and acoustic receivers, each suited for specific applications(CITE). Optical receivers are suitable for indoor scenarios where RF is undesirable, notably in hospital operating rooms or production lines(CITE), while acoustic receivers are proposed for monitoring the health of critical infrastructure like bridges by scanning the structure's acoustic signature(CITE), as well as for communication with underwater devices where RF signals cannot penetrate effectively(CITE). Nevertheless, in the context of UAV-WSNs, wake-up radios (WuRs) are particularly advantageous due to their ability to provide reliable, energy-efficient, long-range activation without the need for line-of-sight(CITE).
+Various WuRx approaches exist, including radiofrequency, optical, and acoustic receivers, each suited for specific applications\cite{overview_wurx_survey}. Optical receivers are suitable for indoor scenarios where RF is undesirable\cite{optical_wurx}, notably in hospital operating rooms or production lines, while acoustic receivers are proposed for monitoring the health of critical infrastructure, for example, bridges, by scanning the structure's acoustic signature\cite{acoustic_wurx_structure}, as well as for communication with underwater devices where RF signals cannot penetrate effectively\cite{acoustic_wurx_underwater}. Nevertheless, in the context of UAV-WSNs, wake-up radios (WuRs) are particularly advantageous due to their ability to provide reliable, energy-efficient, long-range activation without the need for line-of-sight(CITE).
 
 Considering the constraints of an EH-powered sensor network, we focused on passive WuR designs that operate without relying on any dedicated power source, enabling reliable operation even under scarce energy conditions. Figure \ref{fig:drone_over_sensor} illustrates an outdoor test scenario where a UAV with an amplified transmitter approaches a solar EH-powered sensor node that utilizes our passive WuR prototype, detailed in the subsequent section.
 
@@ -70,9 +59,9 @@ Considering the constraints of an EH-powered sensor network, we focused on passi
 
 \subsection{Experimental Setup}
 
-In order to conduct experiments, we assembled a passive wake-up radio on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. For experiments with commercial antennas, a 50~$\Omega$ matching network is connected to the circuit.
+In order to conduct experiments, we assembled a passive wake-up radio on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. For experiments with commercial antennas, a 50~$\Omega$ matching network is included.
 
-Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included a 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. The circuit is depicted in Figure \ref{fig:receiver}.
+Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also added a 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. The circuit is depicted in Figure \ref{fig:receiver}.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=1\linewidth]{receiver.png}}
@@ -98,7 +87,7 @@ Moreover, future efforts should present results from extensive outdoor tests usi
 
 By addressing these challenges, we hope to advance the practical implementation of sustainable, batteryless sensor networks within a UAV-WSN setting.
 
-% \bibliographystyle{IEEEtran}
-% \bibliography{references}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
 
 \end{document}
