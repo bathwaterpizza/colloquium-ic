@@ -8,6 +8,7 @@ b,amsfonts}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{siunitx}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -47,7 +48,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
   However, providing regular maintenance for an extensive, scattered WSN is impractical, leading to devices with limited service life, usually tied to their battery lifespan. Further, they are often treated as disposable, and as a result, become chemical waste.
 
-  In this ongoing study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radio receivers, proposing a simple design and discussing the results of real-world experiments.
+  In this ongoing study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radios, proposing a simple design and discussing the results of real-world experiments.
 \end{abstract}
 
 \section{Introduction}
@@ -64,25 +65,29 @@ There are various WuRx options(CITE), including optical and acoustic receivers, 
 
 TODO: justificar melhor ter escolhido wake-up radios, e as aplicacoes dos outros tipos. revisar esse segundo paragrafo em geral, primeiro ta ok.
 
+falar que e porque escolhemos um passivo, e o que é passivo
+
+mention addressing capabilities for targeted wake-up
+
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=0.8\linewidth]{drone_flying_over_sensor.jpg}}
-  \caption{UAV approaching a batteryless sensor to collect data}
+  \caption{UAV approaching a batteryless sensor}
   \label{fig:drone_over_sensor}
 \end{figure}
 
 \section{Experiment and Results}
 
-\subsection{Setup and Methodology}
+\subsection{Test Environment}
 
-In order to conduct experiments, we assembled a passive wake-up radio receiver on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included an 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. An LTSpice simulation of the circuit is depicted in Figure \ref{fig:ltspice_receiver}.
+In order to conduct experiments, we assembled a passive wake-up radio on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, and a 50~$\Omega$ matching network, as we expect to receive a 433~MHz signal. Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included a 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. The circuit is depicted in Figure \ref{fig:receiver}.
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=0.8\linewidth]{ltspice_receiver.jpg}}
-  \caption{Circuit}
-  \label{fig:ltspice_receiver}
+  \centerline{\includegraphics[width=1\linewidth]{receiver.png}}
+  \caption{Passive wake-up radio schematic}
+  \label{fig:receiver}
 \end{figure}
 
-In this instance, we performed in-lab measurements with the transmitter powered directly by a DC power supply. The transmitter is a CC1101 radio connected to an ESP32, which is programmed to continuously send a carrier wave with arbitrary data at its maximum power of +12~dBm, in the 433~MHz frequency range. The receiver is connected to an oscilloscope for measuring output voltage, as we hope to achieve at least 2.3~V, which is the minimum threshold for interrupt detection by an MSP430-equipped sensor node.
+In this instance, we performed in-lab measurements with the transmitter powered directly by a DC power supply. The transmitter is a CC1101 radio connected to an ESP32, which is programmed to continuously send a carrier wave with arbitrary data at its maximum power of +12~dBm, in the 433~MHz frequency range. The receiver is connected to an oscilloscope for measuring output voltage, as we hope to achieve at least 2.3~V, which is the minimum threshold for interrupt detection by low-power microcontrollers, namely our MSP430-equipped sensor node.
 
 Although initial tests were performed indoors, we've also built an autonomous, programmable and modular UAV, as seen in Figure \ref{fig:drone_over_sensor}, in order to assess more realistic scenarios.
 
@@ -94,6 +99,10 @@ As a point of reference, we've also performed tests with a commercial 433~MHz ha
 
 \section{Conclusion}
 
+The preliminary findings of this research highlight both the potential and challenges of employing passive wake-up radio receivers. While the in-lab tests confirmed that RF energy harvesting is feasible, achieving efficient energy transfer at practical distances remains unresolved. Additional development in the energy transmission and harvesting process is necessary to achieve the desired outcome. Further studies may focus on better antenna designs and circuit optimization for RF operation.
+
+Moreover, the research will focus on conducting comprehensive outdoor tests with a fully equipped UAV to measure the impact of external variables such as motor and weather interference and communication reliability with a non stationary transmitter. By addressing these challenges, we hope to advance the practical implementation of sustainable, batteryless sensor networks within a UAV-WSN setting.
+
 summarize findings
 
 next steps
@@ -102,7 +111,7 @@ want to conduct outdoors tests with the drone, amplifier mounted, measure motor 
 
 optimize energy transfer: investigate better antenna designs, dipole antenna option ignores ground plane
 
-\bibliographystyle{IEEEtran}
-\bibliography{references}
+% \bibliographystyle{IEEEtran}
+% \bibliography{references}
 
 \end{document}
