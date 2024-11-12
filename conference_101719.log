@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  11 NOV 2024 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  12 NOV 2024 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,13 +337,13 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 <drone_flying_over_sensor.jpg, id=1, 3011.25pt x 4015.0pt>
 File: drone_flying_over_sensor.jpg Graphic file (type jpg)
 <use drone_flying_over_sensor.jpg>
-Package pdftex.def Info: drone_flying_over_sensor.jpg  used on input line 73.
+Package pdftex.def Info: drone_flying_over_sensor.jpg  used on input line 69.
 (pdftex.def)             Requested size: 201.60077pt x 268.76468pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
  (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -355,7 +355,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <receiver.png, id=12, 347.25479pt x 153.76596pt>
 File: receiver.png Graphic file (type png)
 <use receiver.png>
-Package pdftex.def Info: receiver.png  used on input line 85.
+Package pdftex.def Info: receiver.png  used on input line 81.
 (pdftex.def)             Requested size: 252.0pt x 111.58656pt.
 
 
@@ -380,17 +380,17 @@ L3 programming layer <2024-10-09>
  ) 
 Here is how much of TeX's memory you used:
  8560 strings out of 473577
- 192030 string characters out of 5732224
+ 192028 string characters out of 5732224
  565741 words of memory out of 5000000
- 31399 multiletter control sequences out of 15000+600000
- 589135 words of font info for 92 fonts, out of 8000000 for 9000
+ 31398 multiletter control sequences out of 15000+600000
+ 590213 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,8n,80p,779b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (2 pages, 10324548 bytes).
+ 73i,8n,80p,1148b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (2 pages, 10331988 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
