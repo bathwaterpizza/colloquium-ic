@@ -70,7 +70,9 @@ Considering the constraints of an EH-powered sensor network, we focused on passi
 
 \subsection{Experimental Setup}
 
-In order to conduct experiments, we assembled a passive wake-up radio on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, and a 50~$\Omega$ matching network, as we expect to receive a 433~MHz signal. Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included a 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. The circuit is depicted in Figure \ref{fig:receiver}.
+In order to conduct experiments, we assembled a passive wake-up radio on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, as we expect to receive a 433~MHz signal. For experiments with commercial antennas, a 50~$\Omega$ matching network is connected to the circuit.
+
+Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included a 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. The circuit is depicted in Figure \ref{fig:receiver}.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=1\linewidth]{receiver.png}}
