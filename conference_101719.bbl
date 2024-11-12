@@ -53,10 +53,35 @@ D.~Popescu, F.~Stoican, G.~Stamatescu, L.~Ichim, and C.~Dragana, ``Advanced uavâ
 H.~Zhou, J.~Lynch, and D.~Zekkos, ``Autonomous wireless sensor deployment with unmanned aerial vehicles for structural health monitoring applications,'' \emph{Structural Control and Health Monitoring}, vol.~29, no.~6, p. e2942, 2022. [Online]. Available: \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/stc.2942}
 \BIBentrySTDinterwordspacing
 
+\bibitem{battery_vs_eh}
+M.~Teresa~Penella, J.~Albesa, and M.~Gasulla, ``Powering wireless sensor nodes: Primary batteries versus energy harvesting,'' in \emph{2009 IEEE Instrumentation and Measurement Technology Conference}, 2009, pp. 1625--1630.
+
+\bibitem{eh_in_wsns_review}
+\BIBentryALTinterwordspacing
+F.~K. Shaikh and S.~Zeadally, ``Energy harvesting in wireless sensor networks: A comprehensive review,'' \emph{Renewable and Sustainable Energy Reviews}, vol.~55, pp. 1041--1054, 2016. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S1364032115012629}
+\BIBentrySTDinterwordspacing
+
+\bibitem{eh_limits}
+O.~Ozel, K.~Tutuncuoglu, S.~Ulukus, and A.~Yener, ``Fundamental limits of energy harvesting communications,'' \emph{IEEE Communications Magazine}, vol.~53, no.~4, pp. 126--132, 2015.
+
+\bibitem{duty_cycle_results}
+J.~Saraswat and P.~P. Bhattacharya, ``Effect of duty cycle on energy consumption in wireless sensor networks,'' \emph{International Journal of Computer Networks \& Communications}, vol.~5, no.~1, p. 125, 2013.
+
+\bibitem{duty_cycling_vs_receiver}
+J.~Aranda, M.~Sch{\"o}lzel, D.~Mendez, and H.~Carrillo, ``Multimodal wireless sensor networks based on wake-up radio receivers: An analytical model for energy consumption,'' \emph{Revista Facultad de Ingenier{\'\i}a Universidad de Antioquia}, no.~91, pp. 113--124, 2019.
+
+\bibitem{eh_wake_receiver_benefits}
+\BIBentryALTinterwordspacing
+F.~Ait~Aoudia, M.~Gautier, M.~Magno, O.~Berder, and L.~Benini, ``Leveraging energy harvesting and wake-up receivers for long-term wireless sensor networks,'' \emph{Sensors}, vol.~18, no.~5, 2018. [Online]. Available: \url{https://www.mdpi.com/1424-8220/18/5/1578}
+\BIBentrySTDinterwordspacing
+
 \bibitem{overview_wurx_survey}
 \BIBentryALTinterwordspacing
 E.~Zaraket, N.~M. Murad, S.~S. Yazdani, L.~Rajaoarisoa, and B.~Ravelo, ``An overview on low energy wake-up radio technology: Active and passive circuits associated with mac and routing protocols,'' \emph{Journal of Network and Computer Applications}, vol. 190, p. 103140, 2021. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S1084804521001570}
 \BIBentrySTDinterwordspacing
+
+\bibitem{receiver_with_addressing}
+M.~Magno and L.~Benini, ``An ultra low power high sensitivity wake-up radio receiver with addressing capability,'' in \emph{2014 IEEE 10th International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)}, 2014, pp. 92--99.
 
 \bibitem{optical_wurx}
 C.~Y. Saw, Y.~C. Wong, S.~L. Loh, and H.~Zhang, ``On-chip ultra low power optical wake-up receiver for wireless sensor nodes targeting structural health monitoring,'' \emph{TELKOMNIKA (Telecommunication Computing Electronics and Control)}, vol.~18, no.~5, pp. 2257--2264, 2020.
@@ -70,5 +95,8 @@ D.~Yang and J.~Zhao, ``Acoustic wake-up technology for microsystems: A review,''
 \BIBentryALTinterwordspacing
 J.~H. Schmidt and A.~M. Schmidt, ``Wake-up receiver for underwater acoustic communication using in shallow water,'' \emph{Sensors}, vol.~23, no.~4, 2023. [Online]. Available: \url{https://www.mdpi.com/1424-8220/23/4/2088}
 \BIBentrySTDinterwordspacing
+
+\bibitem{performance_eval_uavwsn}
+A.~V. Sheshashayee, M.~Bordin, P.~B. del Prever, D.~Villa, H.~Cheng, C.~Petrioli, T.~Melodia, and S.~Basagni, ``Experimental evaluation of the performance of uav-assisted data collection for wake-up radio-enabled wireless networks,'' in \emph{2024 IEEE 99th Vehicular Technology Conference (VTC2024-Spring)}, 2024, pp. 01--06.
 
 \end{thebibliography}
