@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1731382323.34068 "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731382325.51504 0
+["pdflatex"] 1731383304.04267 "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1731383306.31119 0
   "IEEEtran.cls" 1730506044 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "conference_101719.aux" 1731382325 1064 3972388b7b5413c58c1deae6c017580e "pdflatex"
-  "conference_101719.tex" 1731382322 9559 7697a58930c6f95d2505bf2183b551e2 ""
+  "conference_101719.aux" 1731383306 1085 9443316b32bd30c95a2c34cc54d7921e "pdflatex"
+  "conference_101719.tex" 1731383300 9580 af67daae30ee6e3f65379613ea50970a ""
   "d:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1730420265 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1730420533 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1730424519 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -74,7 +74,7 @@
   "d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1730426221 3325923 c77af011d1b205e327775011df86642a ""
   "d:/texlive/2024/texmf.cnf" 1730425874 713 e69b156964470283e0530f5060668171 ""
   "drone_flying_over_sensor.jpg" 1731276602 10185616 b922240d2e51579bf8b7f0a437a5a4b1 ""
-  "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" 1731382322 9559 7697a58930c6f95d2505bf2183b551e2 ""
+  "g:/My Drive/pc_sync/school/colloquium-ic/conference_101719.tex" 1731383300 9580 af67daae30ee6e3f65379613ea50970a ""
   "receiver.png" 1731372197 94976 b9fe43b6d4d6752edb3614f3c4a60866 ""
   (generated)
   "conference_101719.aux"
