@@ -1,9 +1,8 @@
 \documentclass[conference]{IEEEtran}
-\IEEEoverridecommandlockouts
+% \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
-\usepackage{amsmath,amssym
-b,amsfonts}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
@@ -44,7 +43,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \maketitle
 
 \begin{abstract}
-  A number of studies have been proposed to tackle the task of monitoring large areas by deploying a wireless sensor network. When communication infrastructure is unavailable, or the region is not easily accessible, data can be retrieved from such networks by using Unmanned Aerial Vehicles (UAVs) as gateways to a base station, thus creating a UAV-assisted Wireless Sensor Network (UAV-WSN). However, providing regular maintenance for an extensive, scattered WSN is impractical, leading to devices with limited service life, usually tied to their battery lifespan. Further, they are often treated as disposable, and as a result, become chemical waste. In this ongoing study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radios, proposing a simple design and discussing the results of real-world experiments.
+  A number of studies have been proposed to tackle the task of monitoring large areas by deploying a wireless sensor network. When communication infrastructure is unavailable, or the region is not easily accessible, data can be retrieved from such networks by using Unmanned Aerial Vehicles (UAVs) as gateways to a base station, thus creating a UAV-assisted Wireless Sensor Network (UAV-WSN). However, providing regular maintenance for an extensive, scattered WSN is impractical, leading to devices with limited service life, usually tied to their battery lifespan. Consequently, they are often treated as disposable, and as a result, become chemical waste. In this ongoing study, we explore the integration of batteryless sensors powered by energy harvesting (EH) within UAV-WSNs. Since energy-efficient sensors cannot be continuously powered on, we begin by investigating techniques for establishing communication between sensors in a sleep state and UAVs, and ultimately focus on passive wake-up radios, proposing a simple design and discussing the results of real-world experiments.
 \end{abstract}
 
 \section{Introduction}
@@ -55,15 +54,11 @@ One of the challenges with WSNs in remote areas is the reliance on battery-power
 
 \section{Energy-Efficient Communication}
 
-Traditional duty cycling is a common technique for reducing energy consumption in WSNs(CITE), by periodically switching sensors between active and sleep states. While this approach can extend battery life, it introduces latency and limits network responsiveness(CITE), as sensors are unavailable during sleep periods. Wake-up receiver (WuRx)-based solutions offer a more efficient alternative, as they allow sensors to remain in a deep sleep state until activated by an external signal, therefore drastically lowering energy use(CITE).
+Traditional duty cycling reduces energy consumption in wireless sensor networks (WSNs) by periodically switching sensors between active and sleep states(CITE). However, this method introduces several drawbacks, including overhearing, increased latency, packet loss, synchronization complexity, and energy inefficiency during low activity periods(CITE). Wake-up receiver (WuRx)-based solutions offer a more efficient alternative by allowing sensors to remain in deep sleep until activated by an external signal, significantly reducing energy consumption(CITE). Additionally, WuRxs can be configured for addressed wake-up, ensuring that only specific sensors are activated by the wake-up signal, thereby reducing unnecessary energy expenditure.(CITE)
 
-There are various WuRx options(CITE), including optical and acoustic receivers, each suited for specific applications. Optical receivers are often used in line-of-sight scenarios, such as indoor lighting systems(CITE), while acoustic receivers are common in underwater networks or areas where RF propagation is limited(CITE). However, wake-up radios (WuR) are particularly suitable for UAV-WSNs due to their ability to provide reliable, long-range activation without the need for line-of-sight(CITE). Figure \ref{fig:drone_over_sensor} illustrates an outdoor test scenario, a UAV with a transmitter approaching a sensor node powered by solar energy harvesting, incorporating our passive WuR prototype.
+Various WuRx approaches exist, including radiofrequency, optical and acoustic receivers, each suited for specific applications(CITE). Optical receivers are suitable for indoor scenarios where RF is undesirable, notably in hospital operating rooms or production lines(CITE), while acoustic receivers are proposed for monitoring the health of critical infrastructure like bridges by scanning the structure's acoustic signature(CITE), as well as for communication with underwater devices where RF signals cannot penetrate effectively(CITE). Nevertheless, in the context of UAV-WSNs, wake-up radios (WuRs) are particularly advantageous due to their ability to provide reliable, energy-efficient, long-range activation without the need for line-of-sight(CITE).
 
-% TODO: justificar melhor ter escolhido wake-up radios, e as aplicacoes dos outros tipos. revisar esse segundo paragrafo em geral, primeiro ta ok.
-
-% falar que e porque escolhemos um passivo, e o que é passivo
-
-% mention addressing capabilities for targeted wake-up
+Considering the constraints of an EH-powered sensor network, we chose to explore passive WuR designs that operate without relying on any dedicated power source, enabling reliable operation even under scarce energy conditions. Figure \ref{fig:drone_over_sensor} illustrates an outdoor test scenario where a UAV with an amplified transmitter approaches a solar EH-powered sensor node that utilizes our passive WuR prototype, which is detailed in the subsequent section.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=0.8\linewidth]{drone_flying_over_sensor.jpg}}
@@ -73,7 +68,7 @@ There are various WuRx options(CITE), including optical and acoustic receivers, 
 
 \section{Experiment and Results}
 
-\subsection{Test Environment}
+\subsection{Experimental Setup}
 
 In order to conduct experiments, we assembled a passive wake-up radio on a protoboard using off-the-shelf components, based on a voltage doubler circuit, with a 17.3~cm quarter-wave monopole copper wire antenna, and a 50~$\Omega$ matching network, as we expect to receive a 433~MHz signal. Since the primary function of the WuR is to trigger an interrupt in the sensor's GPIO ports, we've also included a 1N4728A voltage clamping Zener diode of 3.3~V to prevent accidental overvoltage on the microcontroller. The circuit is depicted in Figure \ref{fig:receiver}.
 
@@ -97,7 +92,7 @@ As a point of reference, we've also performed tests with a commercial 433~MHz ha
 
 The initial findings of this study highlight the challenges of using passive wake-up radios effectively. While the in-lab experiments confirmed their feasibility, achieving efficient energy transfer at practical distances remains a complex issue. Additional development in the energy transmission and harvesting process is necessary to achieve improved outcomes, with subsequent studies focusing on more effective antenna designs and circuit optimization for RF operation, as well as evaluating the introduction of addressing capabilities to prevent unwanted wake-ups.
 
-Moreover, future research should present results from extensive outdoor tests using autonomous UAVs to evaluate the impact of external variables, such as electromagnetic interference from the UAV's motors and the communication reliability with a non-stationary transmitter.
+Moreover, future efforts should present results from extensive outdoor tests using autonomous UAVs to evaluate the impact of external variables, such as electromagnetic interference from the UAV's motors and the communication reliability with a non-stationary transmitter.
 
 By addressing these challenges, we hope to advance the practical implementation of sustainable, batteryless sensor networks within a UAV-WSN setting.
 
